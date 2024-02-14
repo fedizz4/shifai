@@ -1,0 +1,103 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-item class="left">
+     <p>Acceuil</p>
+    </ion-item>
+    <ion-item large class="right" routerLink="/profil">
+    <ion-icon name="person-circle-outline" ></ion-icon>
+  </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card color="primary">
+          <ion-card-header>
+            <ion-card-title>Mes Dépenses</ion-card-title>
+            <ion-card-subtitle></ion-card-subtitle>
+          </ion-card-header>
+       
+          <ion-card-content> 128.000 dinar</ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col>
+  <ion-card class="couleur2" routerLink="/medecin">
+    <ion-card-header>
+      <ion-card-title>Mes Médecins</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>  </ion-card-content>
+  </ion-card>
+</ion-col>
+
+
+<ion-col>
+  <ion-card class="couleur3" routerLink="/document">
+    <ion-card-header>
+      <ion-card-title>Mes Documents</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+    </ion-card-header>
+ 
+    <ion-card-content> </ion-card-content>
+  </ion-card>
+</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+  <ion-card class="couleur4" routerLink="/medicament">
+    <ion-card-header>
+      <ion-card-title >Mes Médicaments</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> </ion-card-content>
+  </ion-card>
+</ion-col>
+<ion-col>
+  <ion-card class="couleur5">
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content></ion-card-content>
+    
+  </ion-card>
+</ion-col>
+</ion-row>
+</ion-grid>
+
+
+</ion-content>
+<ion-footer collapse="fade">
+  <ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-icon name="home-outline" routerLink="/tabs/tab1"></ion-icon>
+        Home
+      </ion-tab-button>
+      <ion-tab-button tab="radio">
+        <ion-icon name="calendar-outline" routerLink="/tabs/tab2"></ion-icon>
+        Rendez-vous
+      </ion-tab-button>
+      <ion-tab-button tab="search">
+        <ion-icon name="pin-outline" routerLink="/tabs/tab3"></ion-icon>
+        A remplir
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>
+</ion-footer>
